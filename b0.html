@@ -1,0 +1,480 @@
+
+<html>
+    <head>
+        <title>SGPA CALCULATOR</title>
+      <style>
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
+}
+#but{
+    margin-top: -600px;
+    margin-left: 1px;
+    margin-bottom: 10px;
+
+}
+input{
+ width: 190px;
+ height: 50px;
+ text-align: center;
+ border-radius: 5px;
+
+}
+section{
+padding: 10px;
+border-radius: 14px;
+box-shadow:2px 2px 2px 2px rgba(94, 90, 98, 0.463);
+
+}
+h3{
+    font-style:oblique;
+color:blue;
+font-style:italic;    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    box-shadow: 2px 2px 2px red;
+    margin-bottom: 7px;
+
+}
+#input{
+    margin-top: -600px;
+    margin-bottom: 10px;
+    width: 500px;
+    font-size: medium;
+    color: black;
+    font-weight: 400;
+
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:40px ;
+    margin-top: 20px;
+    width: 110px;
+    height: 44px;
+border-radius: 6px;
+background-color: green;
+cursor: pointer;
+  color:white;
+}
+p{
+    color :red;
+  
+}
+ #sec22{
+    display:none;
+}
+#sec11{
+    display:none;
+}#sec12{
+    display:none;
+}
+#sec21{
+    display:none;
+}
+#sec31{
+    display:none;
+}
+     
+      
+      </style>
+<script >
+
+
+
+
+function gpa22(){
+var eng22=document.getElementById('a1');
+var eng122=eng22.value*3;
+
+var db22=document.getElementById('a2');
+var db122=db22.value*3;
+
+var fl22=document.getElementById('a3');
+var fl122=fl22.value*3;
+
+var se22=document.getElementById('a4');
+var se122=se22.value*3;
+
+var ang22=document.getElementById('a9')
+var ang122=ang22.value*3;
+
+
+var dla22=document.getElementById('a5');
+var dla122=dla22.value*(1.5);
+
+var sel22=document.getElementById('a6');
+var sel122=sel22.value*1.5;
+
+var madl22=document.getElementById('a7');
+var madl122=madl22.value*1.5;
+
+var ai22=document.getElementById('a8');
+var ai122=ai22.value*2;
+
+var grades22=eng122+db122+fl122+se122+dla122+sel122+madl122+ai122+ang122;
+let gp22=(grades22)/21.5;
+
+  alert(`secured gpa is ${gp22}`);
+
+
+}
+  
+  //GPA 11
+
+function gpa11(){
+    var eng11=document.getElementById('a11');
+    var eng111=eng11.value*3;
+    var db11=document.getElementById('a21');
+    var db111=db11.value*3;
+    
+    var fl11=document.getElementById('a31');
+    var fl111=fl11.value*3;
+    
+    var se11=document.getElementById('a41');
+    var se111=se11.value*3;
+    
+    var ang11=document.getElementById('a91')
+    var ang111=ang11.value*1.5;
+    
+    
+    var dla11=document.getElementById('a51');
+    var dla111=dla11.value*(1.5);
+    
+    var sel11=document.getElementById('a61');
+    var sel111=sel11.value*1.5;
+    
+    var madl11=document.getElementById('a71');
+    var madl111=madl11.value*1.5;
+    var grades11=eng111+db111+fl111+se111+dla111+sel111+madl111+ang111;
+    var gp11=(grades11)/19.5;
+    alert(`secured gpa is ${gp11}`);
+
+    
+    }
+    
+    //sem12
+
+    function gpa12(){
+        var eng12=document.getElementById('a12');
+        var eng112=eng12.value*3;
+        
+        var db12=document.getElementById('a22');
+        var db112=db12.value*3;
+        
+        var fl12=document.getElementById('a32');
+        var fl112=fl12.value*3;
+        
+        var se12=document.getElementById('a42');
+        var se112=se12.value*3;
+        
+        var ang12=document.getElementById('a92')
+        var ang112=ang12.value*1.5;
+        
+        
+        var dla12=document.getElementById('a52');
+        var dla112=dla12.value*(1.5);
+        
+        var sel12=document.getElementById('a62');
+        var sel112=sel12.value*1.5;
+        
+        var madl12=document.getElementById('a72');
+        var madl112=madl12.value*3;
+        
+        
+        
+        var grades12=eng112+db112+fl112+se112+dla112+sel112+madl112+ang112;
+        var gp12=(grades12)/19.5;
+        
+        alert(`secured gpa is ${gp12}`);
+        
+        }
+//sem 21
+function gpa21(){
+    var eng=document.getElementById('a121');
+    var eng1=eng.value*3;
+    
+    var db=document.getElementById('a221');
+    var db1=db.value*3;
+    
+    var fl=document.getElementById('a321');
+    var fl1=fl.value*3;
+    
+    var se=document.getElementById('a421');
+    var se1=se.value*3;
+    
+    var ang=document.getElementById('a921')
+    var ang1=ang.value*3;
+    
+    
+    var dla=document.getElementById('a521');
+    var dla1=dla.value*(1.5);
+    
+    var sel=document.getElementById('a621');
+    var sel1=sel.value*1.5;
+    
+    var madl=document.getElementById('a721');
+    var madl1=madl.value*1.5;
+    
+    var ai=document.getElementById('a821');
+    var ai1=ai.value*2;
+    
+    var grades=eng1+db1+fl1+se1+dla1+sel1+madl1+ai1+ang1;
+     let gp=grades/21.5;
+    
+    alert(`secured gpa is ${gp}`);
+    
+    }
+    
+    //SEM 31
+
+    function gpa31(){
+        var eng=document.getElementById('a131');
+        var eng1=eng.value*3;
+        
+        var db=document.getElementById('a231');
+        var db1=db.value*3;
+        
+        var fl=document.getElementById('a331');
+        var fl1=fl.value*3;
+        
+        var se=document.getElementById('a431');
+        var se1=se.value*3;
+        
+        var ang=document.getElementById('a931')
+        var ang1=ang.value*3;
+        
+        
+        var dla=document.getElementById('a531');
+        var dla1=dla.value*(1.5);
+        
+        var sel=document.getElementById('a631');
+        var sel1=sel.value*1.5;
+        
+        var madl=document.getElementById('a731');
+        var madl1=madl.value*2;
+        
+        
+        
+        var grades=eng1+db1+fl1+se1+dla1+sel1+madl1+ang1;
+        var gp=(grades)/20.0;
+        alert(`secured gpa is ${gp}`);
+        
+        }
+  
+</script>
+    </head>
+    <body>
+        <table>
+        <tr>
+        <input type="number" id="input" placeholder="Enter your semister like 11 or 12"/><button type="submit" onclick="dis()" id="but">submit</button>
+    </tr>    
+    </table>
+        <section id="sec22">
+            <h3>Semister 2-2 GPA </h3><hr />
+        <form>
+            <input id="a1" placeholder="Enter English Grades" type="number" />
+            <br >
+            <input id="a2" placeholder="Enter DBMS Grades" type="number" />            <br >
+
+            <input id="a3" placeholder="Enter FLAT Grades" type="number" />            <br >
+
+            <input id="a4" placeholder="Enter S.E Grades" type="number" />            <br >
+            <input id="a9" placeholder="Enter MEAN STACK Grades" type="number" />            <br >
+
+
+            <input id="a5" placeholder="Enter DBMS LABGrades" type="number" />            <br />
+
+            <input id="a6" placeholder="Enter S.E LABGrades" type="number" />            <br />
+
+            <input id="a7" placeholder="Enter M.A.D LAB Grades" type="number" />            <br />
+
+            <input id="a8" placeholder="Enter A.I LAB  Grades" type="number" /><br />
+<button id="submit" onclick="gpa22()" type="submit">submit</button>
+        
+
+
+
+    <p id="res"> </p>
+
+
+</form>
+
+
+        </section>
+      
+             <!----sem11-->
+
+       <section id="sec11">
+        <h3>Semister 1-1 SGPA </h3><hr>
+    <form>
+        <input type="number" id="a11" placeholder="Enter English Grades"/>
+        <br>
+        <input type="number" id="a21" placeholder="Enter LA&C Grades"/>            <br>
+
+        <input type="number" id="a31" placeholder="Enter Physics Grades"/>            <br>
+
+        <input type="number" id="a41" placeholder="Enter C Grades"/>            <br>
+        <input type="number" id="a91" placeholder="Enter Soft Skills  Lab - I Grades"/>            <br>
+
+
+        <input type="number" id="a51" placeholder="Enter C LAB Grades"/>            <br>
+
+        <input type="number" id="a61" placeholder="Enter Physics LAB Grades"/>            <br>
+
+        <input type="number" id="a71" placeholder="Enter LINUX LAB Grades"/>            <br>
+
+<button type="submit" id="submit" onclick="gpa11()">submit</button>
+    
+
+
+
+<P id="res11"> </P>
+
+
+</form>
+
+
+    </section><br>
+   <!---sem12-->
+
+   
+   <section id="sec12">
+    <h3>Semister 1-2 SGPA </h3><hr>
+<form>
+    <input type="number" id="a12" placeholder="Enter NM&S Grades"/>
+    <br>
+    <input type="number" id="a22" placeholder="Enter Chemistry Grades"/>            <br>
+
+    <input type="number" id="a32" placeholder="Enter Python Grades"/>            <br>
+
+    <input type="number" id="a42" placeholder="Enter EDLD Grades"/>            <br>
+    <input type="number" id="a92" placeholder="Enter Chemistry Lab Grades"/>            <br>
+
+
+    <input type="number" id="a52" placeholder="Enter R  LAB Grades"/>            <br>
+
+    <input type="number" id="a62" placeholder="Enter Python LAB Grades"/>            <br>
+
+    <input type="number" id="a72" placeholder="Enter Workshop LAB Grades"/>            <br>
+    
+
+<button type="submit" id="submit" onclick="gpa12()">submit</button>
+
+
+
+<div>
+<P id="res"> </P>
+
+</div>
+</form>
+
+
+</section><br>
+
+<!---sem21-->
+
+
+<section id="sec21">
+    <h3>Semister 2-1 SGPA </h3><hr>
+<form>
+    <input type="number" id="a121" placeholder="Enter MFCS Grades"/>
+    <br>
+    <input type="number" id="a221" placeholder="Enter JAVA Grades"/>            <br>
+
+    <input type="number" id="a321" placeholder="Enter Data Structures Grades"/>            <br>
+
+    <input type="number" id="a421" placeholder="Enter CO Grades"/>            <br>
+    <input type="number" id="a921" placeholder="Enter FEWT  Grades"/>            <br>
+
+
+    <input type="number" id="a521" placeholder="Enter Data Structures LAB Grades"/>            <br>
+
+    <input type="number" id="a621" placeholder="Enter JAVA LAB Grades"/>            <br>
+
+    <input type="number" id="a721" placeholder="Enter FEWT LAB Grades"/>            <br>
+    <input type="number" id="a821" placeholder="Enter DATA SCIENCE LAB Grades"/>            <br>
+
+    
+
+<button type="submit" id="submit" onclick="gpa21()">submit</button>
+
+
+
+<div>
+<P id="res"> </P>
+
+</div>
+</form>
+
+
+</section><br>
+<!----sem31-->
+<section id="sec31">
+    <h3>Semister 3-1 SGPA </h3><hr>
+<form>
+    <input type="number" id="a131" placeholder="Enter D.A.A Grades"/>
+    <br>
+    <input type="number" id="a231" placeholder="Enter C.N Grades"/>            <br>
+
+    <input type="number" id="a331" placeholder="Enter C.D  Grades"/>            <br>
+
+    <input type="number" id="a431" placeholder="Enter O.S Grades"/>            <br>
+    <input type="number" id="a931" placeholder="Enter D.W.D.M  Grades"/>            <br>
+
+
+    <input type="number" id="a531" placeholder="Enter DAA&CD LAB Grades"/>            <br>
+
+    <input type="number" id="a631" placeholder="Enter C.N&O.S LAB Grades"/>            <br>
+
+    <input type="number" id="a731" placeholder="Enter English LAB Grades"/>            <br>
+
+    
+
+<button type="submit" id="submit" onclick="gpa31()">submit</button>
+
+
+
+<div>
+<P id="res"> </P>
+
+</div>
+</form>
+
+
+</section><br>
+
+
+
+<script>
+
+  function dis(){
+var k=document.getElementById('input');
+var k1=k.value;
+        
+        if (k1 =='22'||k1==22){
+            document.getElementById('sec22').style.display='block';
+        }
+        else if(k1 =='11'||k1==11){
+            document.getElementById('sec11').style.display='block';
+        }
+        else if(k1 =='12'||k1==12){
+            document.getElementById('sec12').style.display='block';
+        }
+        else if(k1 =='21'||k1==21){
+            document.getElementById('sec21').style.display='block';
+        }
+        else if(k1 =='31'||k1==31){
+            document.getElementById('sec31').style.display='block';
+        }
+    }     
+  
+</script>
+    </body>
+    
+</html>
